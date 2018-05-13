@@ -27,7 +27,7 @@ chrome.extension.sendMessage({}, function (response) {
             function handleEvent(e) {
                 var keyCode = e.keyCode;
                 //if key is "-" decrease speed
-                if (keyCode == 189) {
+                if (keyCode == 189 || keyCode == 109) {
                     //decrease speed
                     speed -= 0.25;
                     
@@ -45,7 +45,7 @@ chrome.extension.sendMessage({}, function (response) {
                     document.getElementsByClassName('out-bottom-small')[0].getElementsByTagName('div')[0].innerHTML = "Estimated time to complete: " + currTimeDisplay + " mins";
                 }
                 //if key is "=" increase speed
-                else if (keyCode == 187) {
+                else if (keyCode == 187 || keyCode == 107) {
                     //increase speed
                     speed += 0.25;
                     
