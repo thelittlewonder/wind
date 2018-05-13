@@ -5,6 +5,7 @@
     "author": "thelittlewonder",
     "description": "Change the playback speed of IDF Videos!",
     "homepage_url": "https://www.github.com/littlewonder/wind",
+    "short_name": "Wind",
     "icons": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
