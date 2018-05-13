@@ -1,0 +1,6 @@
+ {
+    "name": "Wind - IDF Speed Control",
+    "version": "1.0",
+    "description": "Change the playback speed of IDF Videos!",
+    "manifest_version": 2
+  }
