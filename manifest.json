@@ -16,6 +16,7 @@
             "matches": [
         "https://www.interaction-design.org/courses/*"
       ],
+            "css": ["css/inject.css"],
             "js": [
         "src/inject/inject.js"
       ]
