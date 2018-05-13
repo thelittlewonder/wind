@@ -20,7 +20,7 @@ chrome.extension.sendMessage({}, function (response) {
 
             //Add Current Speed Node
             var currSpeed = document.createElement("span");
-            currSpeed.innerHTML = "Current Speed: " + speed;
+            currSpeed.innerHTML = "Playback Speed: " + speed;
             currSpeed.className = "speed";
             document.getElementsByClassName('out-bottom-small')[0].appendChild(currSpeed);
 
@@ -28,10 +28,11 @@ chrome.extension.sendMessage({}, function (response) {
                 var keyCode = e.keyCode;
                 //if key is "-" decrease speed
                 if (keyCode == 189) {
-                    console.log("Speed Before: " + currTime);
                     //decrease speed
                     speed -= 0.25;
-                    currSpeed.innerHTML = "Current Speed: " + speed;
+                    
+                    //update Speed
+                    currSpeed.innerHTML = "Playback Speed: " + speed;
                     
                     //decrease playback rate
                     document.querySelector('video').playbackRate -= 0.25;
@@ -42,14 +43,14 @@ chrome.extension.sendMessage({}, function (response) {
 
                     //update time to finish
                     document.getElementsByClassName('out-bottom-small')[0].getElementsByTagName('div')[0].innerHTML = "Estimated time to complete: " + currTimeDisplay + " mins";
-                    console.log("Speed Now: " + currTime);
                 }
                 //if key is "=" increase speed
                 else if (keyCode == 187) {
-                    console.log("Speed Before: " + currTime);
                     //increase speed
                     speed += 0.25;
-                    currSpeed.innerHTML = "Current Speed: " + speed;
+                    
+                    //update Speed
+                    currSpeed.innerHTML = "Playback Speed: " + speed;
 
                     //increase playback rate
                     document.querySelector('video').playbackRate += 0.25;
@@ -60,7 +61,6 @@ chrome.extension.sendMessage({}, function (response) {
 
                     //update time to finish
                     document.getElementsByClassName('out-bottom-small')[0].getElementsByTagName('div')[0].innerHTML = "Estimated time to complete: " + currTimeDisplay + " mins";
-                    console.log("Speed Now: " + currTime);
                 } else {
                     //do nothing
                 }
