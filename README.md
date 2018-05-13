@@ -5,7 +5,7 @@ Change Playback speed of videos on InteractionDesign.org in realtime.
 ![Demo](https://i.imgur.com/rC5LEoq.jpg)
 
 # Installation
-1. [Download the Extension](https://github.com/littlewonder/wind/raw/master/Wind.crx)
+1. [Download the Extension](https://github.com/littlewonder/wind/releases/download/0.0.1/Wind.crx)
 2. In Google Chrome: Click on the Settings-Icon (the 'three horizontal-bars' icon in the top-right corner) > More Tools > Extensions
 
 
