@@ -3,5 +3,5 @@
 Change Playback speed of videos on InteractionDesign.org in realtime.
 
 ## Controls
-- Increase Speed using -/_
-- Decrease Speed using +/=
+- Increase Speed using - or _
+- Decrease Speed using + or =
